@@ -71,7 +71,7 @@ export default function Home() {
 							height={173}
 							src="/example.png"
 							alt="Example of a keybind setup"
-							className="w-full object-contain rounded-md shadow-md overflow-hidden"
+							className="w-auto h-auto object-contain rounded-md shadow-md overflow-hidden"
 						/>
 					</div>
 				</div>
