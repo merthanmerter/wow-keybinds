@@ -10,11 +10,11 @@ export default function Home() {
 		<div className="min-h-screen">
 			<main className="container mx-auto p-6 max-w-4xl">
 				{/* Top Ad */}
-				<AdBanner
+				{/* <AdBanner
 					dataAdSlot="6961410074"
 					dataAdFormat="horizontal"
 					dataFullWidthResponsive="true"
-				/>
+				/> */}
 
 				<div className="text-center mb-8">
 					<h2 className="text-lg text-gray-400">World of Warcraft</h2>
