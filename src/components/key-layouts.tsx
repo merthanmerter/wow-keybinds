@@ -16,7 +16,11 @@ export const KeyLayouts: React.FC = () => {
 					{/* Row 1 */}
 					<div className="flex gap-1.5 mb-1.5">
 						<div className="w-16">
-							<KeyTooltip keyLabel="`" imageUrl={"/wow-actionbar-swap.gif"}>
+							<KeyTooltip
+								keyLabel="`"
+								imageUrl={"/wow-actionbar-swap.gif"}
+								unoptimized={true}
+							>
 								<Key
 									keyLabel="`"
 									description="Swap Actions"

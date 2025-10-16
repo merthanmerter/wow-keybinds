@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
 	Tooltip,
 	TooltipContent,
@@ -10,12 +11,14 @@ interface KeyTooltipProps {
 	keyLabel: string;
 	imageUrl: string;
 	children: React.ReactNode;
+	unoptimized?: boolean;
 }
 
 export const KeyTooltip: React.FC<KeyTooltipProps> = ({
 	keyLabel,
 	imageUrl,
 	children,
+	unoptimized = false,
 }) => {
 	return (
 		<Tooltip>
@@ -27,12 +30,13 @@ export const KeyTooltip: React.FC<KeyTooltipProps> = ({
 				sideOffset={12}
 				className="bg-accent border-2 border-yellow-600 rounded-lg shadow-2xl p-3"
 			>
-				{/* biome-ignore lint/performance/noImgElement: Allowed */}
-				<img
+				<Image
+					width={300}
+					height={300}
 					src={imageUrl}
 					alt={`${keyLabel} keybind`}
 					className="rounded max-w-none"
-					style={{ width: "300px", height: "auto" }}
+					unoptimized={unoptimized}
 				/>
 			</TooltipContent>
 		</Tooltip>
