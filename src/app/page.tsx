@@ -9,11 +9,8 @@ export default function Home() {
 	return (
 		<div className="min-h-screen">
 			<main className="container mx-auto p-6 max-w-4xl">
-				{/* Top Banner Ad */}
-				<AdBanner
-					dataAdSlot="YOUR_AD_SLOT_1"
-					className="mb-6"
-				/>
+				{/* Top Ad */}
+				<AdBanner dataAdSlot="6961410074" className="mb-6" />
 
 				<div className="text-center mb-8">
 					<h2 className="text-lg text-gray-400">World of Warcraft</h2>
@@ -73,11 +70,8 @@ export default function Home() {
 					</div>
 				</div>
 
-				{/* Mid-Content Ad */}
-				<AdBanner
-					dataAdSlot="YOUR_AD_SLOT_2"
-					className="my-6"
-				/>
+				{/* Content Ad */}
+				<AdBanner dataAdSlot="8370888185" className="my-6" />
 
 				{/* Keybinds Table */}
 				<div className="mt-6">
@@ -85,10 +79,7 @@ export default function Home() {
 				</div>
 
 				{/* Bottom Ad */}
-				<AdBanner
-					dataAdSlot="YOUR_AD_SLOT_3"
-					className="mt-6"
-				/>
+				<AdBanner dataAdSlot="1777559677" className="mt-6" />
 			</main>
 		</div>
 	);
