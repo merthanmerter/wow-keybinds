@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Home() {
 	return (
 		<div className="min-h-screen">
-			<main className="container mx-auto p-6 max-w-4xl">
+			<main className="container mx-auto p-3 md:p-6 max-w-4xl">
 				{/* Top Ad */}
 				{/* <AdBanner
 					dataAdSlot="6961410074"
