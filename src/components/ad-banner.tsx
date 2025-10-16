@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import { GOOGLE_AD_CLIENT_ID } from "@/lib/constants";
 
-interface AdBannerProps {
+type AdBannerTypes = {
 	dataAdSlot: string;
-	className?: string;
-}
+	dataAdFormat: "horizontal" | "vertical" | "auto";
+	dataFullWidthResponsive: "true" | "false";
+};
 
 declare global {
 	interface Window {
@@ -13,28 +15,29 @@ declare global {
 	}
 }
 
-export function AdBanner({ dataAdSlot, className = "" }: AdBannerProps) {
+export const AdBanner = ({
+	dataAdSlot,
+	dataAdFormat,
+	dataFullWidthResponsive,
+}: AdBannerTypes) => {
 	useEffect(() => {
 		try {
-			if (typeof window !== "undefined") {
-				window.adsbygoogle = window.adsbygoogle || [];
-				window.adsbygoogle.push({});
-			}
-		} catch (err) {
+			window.adsbygoogle = window.adsbygoogle || [];
+			window.adsbygoogle.push({});
+		} catch (error) {
 			// biome-ignore lint/suspicious/noConsole: Debug
-			console.error("Error loading AdSense script", err);
+			console.log(error);
 		}
 	}, []);
 
 	return (
-		<div className={className}>
-			<ins
-				className="adsbygoogle"
-				style={{ display: "block", height: "90px" }}
-				data-ad-client="ca-pub-9755830363670758"
-				data-ad-slot={dataAdSlot}
-				data-ad-format="horizontal"
-			/>
-		</div>
+		<ins
+			className="adsbygoogle"
+			style={{ display: "block", height: "90px" }}
+			data-ad-client={GOOGLE_AD_CLIENT_ID}
+			data-ad-slot={dataAdSlot}
+			data-ad-format={dataAdFormat}
+			data-full-width-responsive={dataFullWidthResponsive}
+		></ins>
 	);
-}
+};

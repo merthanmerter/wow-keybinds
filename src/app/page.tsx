@@ -10,7 +10,11 @@ export default function Home() {
 		<div className="min-h-screen">
 			<main className="container mx-auto p-6 max-w-4xl">
 				{/* Top Ad */}
-				<AdBanner dataAdSlot="6961410074" />
+				<AdBanner
+					dataAdSlot="6961410074"
+					dataAdFormat="horizontal"
+					dataFullWidthResponsive="true"
+				/>
 
 				<div className="text-center mb-8">
 					<h2 className="text-lg text-gray-400">World of Warcraft</h2>
@@ -61,6 +65,8 @@ export default function Home() {
 						</ul>
 
 						<Image
+							priority={true}
+							unoptimized={true}
 							width={250}
 							height={173}
 							src="/example.png"
@@ -71,7 +77,11 @@ export default function Home() {
 				</div>
 
 				{/* Content Ad */}
-				<AdBanner dataAdSlot="8370888185" />
+				<AdBanner
+					dataAdSlot="8370888185"
+					dataAdFormat="horizontal"
+					dataFullWidthResponsive="true"
+				/>
 
 				{/* Keybinds Table */}
 				<div className="mt-6">
@@ -79,7 +89,11 @@ export default function Home() {
 				</div>
 
 				{/* Bottom Ad */}
-				<AdBanner dataAdSlot="1777559677" />
+				<AdBanner
+					dataAdSlot="1777559677"
+					dataAdFormat="horizontal"
+					dataFullWidthResponsive="true"
+				/>
 			</main>
 		</div>
 	);
