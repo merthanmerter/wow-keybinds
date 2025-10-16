@@ -1,4 +1,4 @@
-import Script from "next/script";
+// import Script from "next/script";
 
 type AdsenseTypes = {
 	pId: string;
@@ -6,12 +6,17 @@ type AdsenseTypes = {
 
 const AdSense = ({ pId }: AdsenseTypes) => {
 	return (
-		<Script
+		// <Script
+		// 	async
+		// 	src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${pId}`}
+		// 	crossOrigin="anonymous"
+		// 	strategy="afterInteractive"
+		// />
+		<script
 			async
-			src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${pId}`}
+			src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${pId}`}
 			crossOrigin="anonymous"
-			strategy="afterInteractive"
-		/>
+		></script>
 	);
 };
 
