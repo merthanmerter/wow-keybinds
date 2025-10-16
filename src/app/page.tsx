@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AdBanner } from "@/components/ad-banner";
+import { DonateButton } from "@/components/donate-button";
 import { KeyLayouts } from "@/components/key-layouts";
 import { KeybindsTable } from "@/components/keybinds-table";
 import { Kbd } from "@/components/ui/kbd";
@@ -17,10 +18,15 @@ export default function Home() {
 				/> */}
 
 				<div className="text-center mb-8">
-					<h2 className="text-lg text-gray-400">World of Warcraft</h2>
-					<h1 className="text-4xl font-bold text-yellow-400 mb-2 uppercase">
+					<h2 className="text-lg text-gray-400 text-center tracking-wide">
+						World of Warcraft
+					</h2>
+					<h1 className="text-4xl font-bold text-yellow-400 mb-2 uppercase text-center tracking-wide">
 						Dog's Key Bindings
 					</h1>
+					<div className="mt-4 flex justify-center">
+						<DonateButton />
+					</div>
 				</div>
 
 				<div className="grid md:grid-cols-2 gap-6">
