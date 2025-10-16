@@ -6,7 +6,8 @@ import { KeyTooltip } from "./key-tooltip";
 import { Kbd } from "./ui/kbd";
 
 export const KeyLayouts: React.FC = () => {
-	const { isShiftPressed, setClickShift } = useShiftPressed();
+	const { isShiftPressed, setClickShift, toggleClickShift, isMobile } =
+		useShiftPressed();
 
 	return (
 		<>
@@ -15,7 +16,7 @@ export const KeyLayouts: React.FC = () => {
 				<div className="bg-card p-6 rounded-lg inline-block overflow-visible w-full h-full">
 					{/* Row 1 */}
 					<div className="flex gap-1.5 mb-1.5">
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<KeyTooltip
 								keyLabel="`"
 								imageUrl={"/wow-actionbar-swap.gif"}
@@ -29,7 +30,7 @@ export const KeyLayouts: React.FC = () => {
 								/>
 							</KeyTooltip>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="1"
 								description="2nd Priority"
@@ -39,7 +40,7 @@ export const KeyLayouts: React.FC = () => {
 								modifierDescription="CD / Utility"
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="2"
 								description="2nd Priority"
@@ -49,7 +50,7 @@ export const KeyLayouts: React.FC = () => {
 								modifierDescription="CD / Utility"
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="3"
 								description="2nd Priority"
@@ -57,7 +58,7 @@ export const KeyLayouts: React.FC = () => {
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="4"
 								description="2nd Priority"
@@ -69,7 +70,7 @@ export const KeyLayouts: React.FC = () => {
 
 					{/* Row 2 */}
 					<div className="flex gap-1.5 mb-1.5">
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="TAB"
 								description="Target"
@@ -77,7 +78,7 @@ export const KeyLayouts: React.FC = () => {
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="Q"
 								description="1st Priority"
@@ -87,14 +88,14 @@ export const KeyLayouts: React.FC = () => {
 								modifierDescription="CD / Utility"
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="W"
 								description="Move Forward"
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="E"
 								description="1st Priority"
@@ -104,7 +105,7 @@ export const KeyLayouts: React.FC = () => {
 								modifierDescription="CD / Utility"
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="R"
 								description="1st Priority"
@@ -124,14 +125,14 @@ export const KeyLayouts: React.FC = () => {
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="A"
 								description="Strafe Left"
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="S"
 								description="1st Priority"
@@ -140,14 +141,14 @@ export const KeyLayouts: React.FC = () => {
 								modifierDescription="CD / Utility"
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="D"
 								description="Strafe Right"
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="F"
 								description="1st Priority"
@@ -162,9 +163,10 @@ export const KeyLayouts: React.FC = () => {
 						<button
 							type="button"
 							className="w-24 ring-0 outline-none"
-							onMouseDown={() => setClickShift(true)}
-							onMouseUp={() => setClickShift(false)}
-							onMouseLeave={() => setClickShift(false)}
+							onClick={isMobile ? toggleClickShift : undefined}
+							onMouseDown={!isMobile ? () => setClickShift(true) : undefined}
+							onMouseUp={!isMobile ? () => setClickShift(false) : undefined}
+							onMouseLeave={!isMobile ? () => setClickShift(false) : undefined}
 						>
 							<Key
 								keyLabel="SHIFT"
@@ -173,28 +175,28 @@ export const KeyLayouts: React.FC = () => {
 								isShiftPressed={false}
 							/>
 						</button>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="Z"
 								description="Mount"
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="X"
 								description="CD / Utility"
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="C"
 								description="CD / Utility"
 								isShiftPressed={isShiftPressed}
 							/>
 						</div>
-						<div className="w-16">
+						<div className="w-auto md:w-16">
 							<Key
 								keyLabel="V"
 								description="CD / Utility"
@@ -217,7 +219,15 @@ export const KeyLayouts: React.FC = () => {
 
 					<div className="text-sm text-gray-400 mt-2 text-center">
 						<p>
-							Press or click <Kbd>Shift</Kbd> to activate modifier
+							{isMobile ? (
+								<>
+									Tap <Kbd>Shift</Kbd> to toggle modifier
+								</>
+							) : (
+								<>
+									Press or click <Kbd>Shift</Kbd> to activate modifier
+								</>
+							)}
 						</p>
 					</div>
 				</div>
@@ -240,7 +250,7 @@ export const KeyLayouts: React.FC = () => {
 							</div>
 
 							<div className="flex gap-1.5 mb-1.5">
-								<div className="w-16">
+								<div className="w-14 md:w-16">
 									<KeyTooltip keyLabel="L" imageUrl={"/click-cast.png"}>
 										<Key
 											keyLabel="L"
@@ -251,7 +261,7 @@ export const KeyLayouts: React.FC = () => {
 										/>
 									</KeyTooltip>
 								</div>
-								<div className="w-16">
+								<div className="w-14 md:w-16">
 									<KeyTooltip keyLabel="M" imageUrl={"/click-cast.png"}>
 										<Key
 											keyLabel="M"
@@ -261,7 +271,7 @@ export const KeyLayouts: React.FC = () => {
 										/>
 									</KeyTooltip>
 								</div>
-								<div className="w-16">
+								<div className="w-14 md:w-16">
 									<KeyTooltip keyLabel="R" imageUrl={"/click-cast.png"}>
 										<Key
 											keyLabel="R"
@@ -291,14 +301,14 @@ export const KeyLayouts: React.FC = () => {
 
 							{/* Side buttons - M4 above M5 on left side */}
 							<div className="absolute left-0 flex flex-col gap-1.5 -ml-3 -translate-x-[100%] top-20">
-								<div className="w-16">
+								<div className="w-10 md:w-16">
 									<Key
 										keyLabel="M4"
-										description="Move Backward"
+										description="Move Back"
 										isShiftPressed={isShiftPressed}
 									/>
 								</div>
-								<div className="w-16">
+								<div className="w-auto md:w-16">
 									<Key
 										keyLabel="M5"
 										description="Jump"

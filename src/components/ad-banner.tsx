@@ -31,13 +31,14 @@ export const AdBanner = ({
 	}, []);
 
 	return (
-		<ins
-			className="adsbygoogle"
-			style={{ display: "block", height: "90px" }}
-			data-ad-client={GOOGLE_AD_CLIENT_ID}
-			data-ad-slot={dataAdSlot}
-			data-ad-format={dataAdFormat}
-			data-full-width-responsive={dataFullWidthResponsive}
-		></ins>
+		<div className="block h-[90px] border border-dashed border-border/50 rounded-md p-2 w-full mx-auto my-4">
+			<ins
+				className="adsbygoogle"
+				data-ad-client={GOOGLE_AD_CLIENT_ID}
+				data-ad-slot={dataAdSlot}
+				data-ad-format={dataAdFormat}
+				data-full-width-responsive={dataFullWidthResponsive}
+			></ins>
+		</div>
 	);
 };
