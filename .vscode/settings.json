@@ -17,5 +17,21 @@
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[plaintext]": {
+		"editor.suggest.showWords": false,
+		"editor.wordBasedSuggestions": "off",
+		"editor.quickSuggestions": {
+			"other": false,
+			"comments": false,
+			"strings": false
+		}
+	},
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false
+	},
+	"files.associations": {
+		"*.txt": "plaintext"
 	}
 }
