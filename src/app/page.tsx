@@ -1,16 +1,16 @@
 import Image from "next/image";
+import { AdBanner } from "@/components/ad-banner";
 import { KeyLayouts } from "@/components/key-layouts";
 import { KeybindsTable } from "@/components/keybinds-table";
 import { Kbd } from "@/components/ui/kbd";
 import { Separator } from "@/components/ui/separator";
-import { AdBanner } from "@/components/ad-banner";
 
 export default function Home() {
 	return (
 		<div className="min-h-screen">
 			<main className="container mx-auto p-6 max-w-4xl">
 				{/* Top Ad */}
-				<AdBanner dataAdSlot="6961410074" className="mb-6" />
+				<AdBanner dataAdSlot="6961410074" />
 
 				<div className="text-center mb-8">
 					<h2 className="text-lg text-gray-400">World of Warcraft</h2>
@@ -61,8 +61,8 @@ export default function Home() {
 						</ul>
 
 						<Image
-							width={500}
-							height={500}
+							width={250}
+							height={173}
 							src="/example.png"
 							alt="Example of a keybind setup"
 							className="w-full object-contain rounded-md shadow-md overflow-hidden"
@@ -71,7 +71,7 @@ export default function Home() {
 				</div>
 
 				{/* Content Ad */}
-				<AdBanner dataAdSlot="8370888185" className="my-6" />
+				<AdBanner dataAdSlot="8370888185" />
 
 				{/* Keybinds Table */}
 				<div className="mt-6">
@@ -79,7 +79,7 @@ export default function Home() {
 				</div>
 
 				{/* Bottom Ad */}
-				<AdBanner dataAdSlot="1777559677" className="mt-6" />
+				<AdBanner dataAdSlot="1777559677" />
 			</main>
 		</div>
 	);

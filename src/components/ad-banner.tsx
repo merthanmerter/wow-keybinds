@@ -20,8 +20,9 @@ export function AdBanner({ dataAdSlot, className = "" }: AdBannerProps) {
 				window.adsbygoogle = window.adsbygoogle || [];
 				window.adsbygoogle.push({});
 			}
-		} catch (_err) {
-			// AdSense script not loaded yet
+		} catch (err) {
+			// biome-ignore lint/suspicious/noConsole: Debug
+			console.error("Error loading AdSense script", err);
 		}
 	}, []);
 

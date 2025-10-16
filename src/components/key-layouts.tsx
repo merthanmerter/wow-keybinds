@@ -233,7 +233,7 @@ export const KeyLayouts: React.FC = () => {
 									keyLabel="MWU"
 									description="Interrupt / Purge"
 									isShiftPressed={isShiftPressed}
-									className="bg-transparent border-amber-600 border-dashed"
+									className="bg-transparent border-amber-600 border-dashed hover:bg-amber-600"
 									hasModifier={true}
 									modifierDescription="Utility / Movement"
 								/>
@@ -280,7 +280,7 @@ export const KeyLayouts: React.FC = () => {
 									keyLabel="MWD"
 									description="Interrupt"
 									isShiftPressed={isShiftPressed}
-									className="bg-transparent border-amber-600 border-dashed"
+									className="bg-transparent border-amber-600 border-dashed hover:bg-amber-600"
 									hasModifier={true}
 									modifierDescription="Utility / Movement"
 								/>
