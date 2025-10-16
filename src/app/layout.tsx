@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import AdSense from "@/components/adsense";
 import { StructuredData } from "@/components/structured-data";
 import { BASE_URL, GOOGLE_AD_CLIENT_ID } from "@/lib/constants";
@@ -106,6 +107,7 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
