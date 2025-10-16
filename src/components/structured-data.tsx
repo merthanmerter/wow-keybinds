@@ -19,10 +19,11 @@ export const StructuredData = () => {
 			},
 			about: {
 				"@type": "VideoGame",
-				name: "World of Warcraft",
+				name: "Dog's Key Bindings",
 				publisher: {
 					"@type": "Organization",
-					name: "Blizzard Entertainment",
+					name: "Verkron",
+					url: "https://verkron.com",
 				},
 			},
 			potentialAction: {
