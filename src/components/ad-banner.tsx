@@ -26,10 +26,10 @@ export function AdBanner({ dataAdSlot, className = "" }: AdBannerProps) {
 	}, []);
 
 	return (
-		<div className={className} style={{ overflow: "hidden" }}>
+		<div className={className}>
 			<ins
 				className="adsbygoogle"
-				style={{ display: "block" }}
+				style={{ display: "block", height: "90px" }}
 				data-ad-client="ca-pub-9755830363670758"
 				data-ad-slot={dataAdSlot}
 				data-ad-format="horizontal"
