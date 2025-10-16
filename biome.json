@@ -1,0 +1,81 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+	"files": {
+		"includes": [
+			"**",
+			"!**/*.test.js",
+			"**/special.test.js",
+			"!node_modules",
+			"!**/routeTree.gen.ts",
+			"!**/drizzle",
+			"!**/dist",
+			"!**/bin",
+			"!**/___*.js",
+			"!**/migrations",
+			"!**/.turbo",
+			"!**/.claude",
+			"!**/.cursor",
+			"!**/.vscode",
+			"!**/.github",
+			"!**/.cursor",
+			"!**/.next"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"attributePosition": "auto",
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 80,
+		"lineEnding": "lf"
+	},
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "always",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"semicolons": "always",
+			"trailingCommas": "all"
+		}
+	},
+	"json": {
+		"formatter": {
+			"trailingCommas": "none"
+		}
+	},
+	"linter": {
+		"rules": {
+			"complexity": {
+				"noUselessFragments": "error",
+				"noExcessiveCognitiveComplexity": {
+					"level": "error",
+					"options": {
+						"maxAllowedComplexity": 50
+					}
+				},
+				"noImportantStyles": "off"
+			},
+			"performance": {
+				"noBarrelFile": "off"
+			},
+			"nursery": {
+				"useConsistentTypeDefinitions": "off"
+			},
+			"style": {
+				"useFilenamingConvention": "off",
+				"noMagicNumbers": "off"
+			},
+			"suspicious": {
+				"noUnknownAtRules": "off",
+				"noConsole": "on"
+			},
+			"correctness": {
+				"useJsonImportAttributes": "off",
+				"useUniqueElementIds": "off"
+			}
+		}
+	}
+}
