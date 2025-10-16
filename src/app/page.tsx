@@ -3,11 +3,18 @@ import { KeyLayouts } from "@/components/key-layouts";
 import { KeybindsTable } from "@/components/keybinds-table";
 import { Kbd } from "@/components/ui/kbd";
 import { Separator } from "@/components/ui/separator";
+import { AdBanner } from "@/components/ad-banner";
 
 export default function Home() {
 	return (
 		<div className="min-h-screen">
 			<main className="container mx-auto p-6 max-w-4xl">
+				{/* Top Banner Ad */}
+				<AdBanner
+					dataAdSlot="YOUR_AD_SLOT_1"
+					className="mb-6"
+				/>
+
 				<div className="text-center mb-8">
 					<h2 className="text-lg text-gray-400">World of Warcraft</h2>
 					<h1 className="text-4xl font-bold text-yellow-400 mb-2 uppercase">
@@ -66,10 +73,22 @@ export default function Home() {
 					</div>
 				</div>
 
+				{/* Mid-Content Ad */}
+				<AdBanner
+					dataAdSlot="YOUR_AD_SLOT_2"
+					className="my-6"
+				/>
+
 				{/* Keybinds Table */}
 				<div className="mt-6">
 					<KeybindsTable />
 				</div>
+
+				{/* Bottom Ad */}
+				<AdBanner
+					dataAdSlot="YOUR_AD_SLOT_3"
+					className="mt-6"
+				/>
 			</main>
 		</div>
 	);
