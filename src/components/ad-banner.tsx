@@ -34,6 +34,7 @@ export const AdBanner = ({
 		<div className="block h-[90px] border border-dashed border-border/50 rounded-md p-2 w-full mx-auto my-4">
 			<ins
 				className="adsbygoogle"
+				style={{ display: "block", minWidth: "300px" }}
 				data-ad-client={GOOGLE_AD_CLIENT_ID}
 				data-ad-slot={dataAdSlot}
 				data-ad-format={dataAdFormat}
