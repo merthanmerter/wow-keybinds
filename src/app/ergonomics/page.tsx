@@ -305,61 +305,6 @@ export default function Page() {
 					</section>
 
 					<section className="mb-8">
-						<h2 className="text-2xl font-semibold mb-4">
-							Ability Priority System
-						</h2>
-						<p className="text-muted-foreground mb-4">
-							Organize your keybinds based on how frequently you use abilities:
-						</p>
-						<div className="space-y-3">
-							<div className="bg-secondary/30 p-3 rounded">
-								<strong className="text-foreground">
-									1st Priority - Core Rotation:
-								</strong>
-								<p className="text-muted-foreground text-sm mt-1">
-									Q, E, R, F, S - Your absolute most important abilities (can
-									extend with ` bar swap)
-								</p>
-							</div>
-							<div className="bg-secondary/30 p-3 rounded">
-								<strong className="text-foreground">
-									2nd Priority - Secondary Rotation:
-								</strong>
-								<p className="text-muted-foreground text-sm mt-1">
-									1, 2, 3, 4 - Additional rotation abilities (can extend with
-									SHIFT for CDs)
-								</p>
-							</div>
-							<div className="bg-secondary/30 p-3 rounded">
-								<strong className="text-foreground">
-									God Button & Critical Abilities:
-								</strong>
-								<p className="text-muted-foreground text-sm mt-1">
-									Space (God Button), Mouse Wheel Up/Down (Interrupts/Purge),
-									SHIFT + Mouse Wheel (Utility/Movement)
-								</p>
-							</div>
-							<div className="bg-secondary/30 p-3 rounded">
-								<strong className="text-foreground">
-									Cooldowns & Utility:
-								</strong>
-								<p className="text-muted-foreground text-sm mt-1">
-									Z (Mount), X, C, V, Caps Lock, SHIFT+Q, SHIFT+E, SHIFT+Space,
-									SHIFT+1, SHIFT+2 - Cooldowns and utility abilities
-								</p>
-							</div>
-							<div className="bg-secondary/30 p-3 rounded">
-								<strong className="text-foreground">
-									Movement & Quality of Life:
-								</strong>
-								<p className="text-muted-foreground text-sm mt-1">
-									Mouse 4 (Jump), Mouse 5 (Back-Strafe), Numpad +/- (Zoom)
-								</p>
-							</div>
-						</div>
-					</section>
-
-					<section className="mb-8">
 						<h2 className="text-2xl font-semibold mb-4">Advanced Techniques</h2>
 
 						<div className="space-y-6">
