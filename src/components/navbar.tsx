@@ -9,8 +9,8 @@ export function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const menuItems = [
-		{ href: "/macro", label: "In-depth Macro Guide" },
 		{ href: "/ergonomics", label: "Ergonomics" },
+		{ href: "/macro", label: "Macros" },
 	];
 
 	return (

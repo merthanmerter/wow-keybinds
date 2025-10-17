@@ -45,9 +45,7 @@ export default function Page() {
 
 						<div className="space-y-4">
 							<div>
-								<h3 className="text-lg font-medium mb-2">
-									Why Space Bar is Critically Important
-								</h3>
+								<h3 className="text-lg font-medium mb-2">Space Bar</h3>
 								<ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
 									<li>
 										<strong>Largest key on your keyboard</strong> - Impossible
@@ -62,11 +60,6 @@ export default function Page() {
 										naturally rests near it
 									</li>
 									<li>
-										<strong>Perfect for "God Button"</strong> - Bind your most
-										critical, life-saving ability here (Iceblock, Divine Shield,
-										Defensive CD)
-									</li>
-									<li>
 										<strong>Default jump is wasteful</strong> - You rarely need
 										to jump in combat; move it to Mouse 4 instead
 									</li>
@@ -74,12 +67,10 @@ export default function Page() {
 							</div>
 
 							<div>
-								<h3 className="text-lg font-medium mb-2">
-									Why S Key is Essential for Abilities
-								</h3>
+								<h3 className="text-lg font-medium mb-2">S Key</h3>
 								<ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
 									<li>
-										<strong>Part of WASD home position</strong> - Your ring
+										<strong>Part of WASD home position</strong> - Your middle
 										finger naturally rests on it
 									</li>
 									<li>
@@ -88,12 +79,8 @@ export default function Page() {
 									</li>
 									<li>
 										<strong>Default backpedal is inefficient</strong> -
-										Backpedaling is 40% slower than strafing and almost never
+										Backpedaling is slower than strafing and almost never
 										optimal
-									</li>
-									<li>
-										<strong>Better movement alternative</strong> - Use Mouse 5
-										for back-strafe (strafe + turn) for better mobility
 									</li>
 									<li>
 										<strong>Core rotation key</strong> - Perfect for frequently
@@ -383,15 +370,14 @@ export default function Page() {
 											<strong className="text-foreground">
 												Context-based gameplay
 											</strong>{" "}
-											- Bar 1 for single-target, Bar 2 for AoE. Or Bar 1 for
-											PvE, Bar 2 for PvP
+											- Example: Bar 1 for single-target, Bar 2 for AoE
 										</li>
 										<li>
 											<strong className="text-foreground">
-												One key to swap everything
+												No uncomfortable hand stretching
 											</strong>{" "}
-											- Instead of pressing Shift/Ctrl/Alt for each individual
-											ability
+											- No need to reach for Shift/Ctrl/Alt modifier keys while
+											maintaining WASD position
 										</li>
 									</ul>
 								</div>
@@ -401,7 +387,9 @@ export default function Page() {
 										<strong>Pro Tip:</strong> The tilde key is perfectly
 										positioned - your pinky can reach it without moving your
 										hand off WASD. After a few hours of practice, swapping bars
-										becomes as natural as shifting gears in a car.
+										becomes as natural as shifting gears in a car. Instead of
+										tilde key, mouse wheel can also be used but mouse wheel is
+										more efficient to use for important abilities.
 									</p>
 								</div>
 							</div>
