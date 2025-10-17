@@ -8,19 +8,20 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { useIsMobile } from "@/hooks/is-mobile";
+import { cn } from "@/lib/utils";
 
 interface KeyTooltipProps {
 	keyLabel: string;
 	imageUrl: string;
 	children: React.ReactNode;
-	unoptimized?: boolean;
+	className?: string;
 }
 
 export const KeyTooltip: React.FC<KeyTooltipProps> = ({
 	keyLabel,
 	imageUrl,
 	children,
-	unoptimized = false,
+	className,
 }) => {
 	const [open, setOpen] = useState(false);
 	const isMobile = useIsMobile();
@@ -32,7 +33,10 @@ export const KeyTooltip: React.FC<KeyTooltipProps> = ({
 	};
 
 	return (
-		<Tooltip open={isMobile ? open : undefined}>
+		<Tooltip
+			open={isMobile ? open : undefined}
+			onOpenChange={isMobile ? setOpen : undefined}
+		>
 			<TooltipTrigger asChild onClick={handleClick}>
 				<div className="w-full h-full">{children}</div>
 			</TooltipTrigger>
@@ -47,8 +51,9 @@ export const KeyTooltip: React.FC<KeyTooltipProps> = ({
 					height={300}
 					src={imageUrl}
 					alt={`${keyLabel} keybind`}
-					className="rounded max-w-none"
-					unoptimized={unoptimized}
+					className={cn("rounded max-w-none", className)}
+					unoptimized={true}
+					priority={true}
 				/>
 			</TooltipContent>
 		</Tooltip>

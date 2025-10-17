@@ -20,7 +20,7 @@ export const KeyLayouts: React.FC = () => {
 							<KeyTooltip
 								keyLabel="`"
 								imageUrl={"/wow-actionbar-swap.gif"}
-								unoptimized={true}
+								className="w-[300px]"
 							>
 								<Key
 									keyLabel="`"
@@ -251,7 +251,11 @@ export const KeyLayouts: React.FC = () => {
 
 							<div className="flex gap-1.5 mb-1.5">
 								<div className="w-14 md:w-16">
-									<KeyTooltip keyLabel="L" imageUrl={"/click-cast.png"}>
+									<KeyTooltip
+										keyLabel="L"
+										imageUrl={"/click-cast.png"}
+										className="w-[350px]"
+									>
 										<Key
 											keyLabel="L"
 											description="Click Cast"
@@ -262,7 +266,11 @@ export const KeyLayouts: React.FC = () => {
 									</KeyTooltip>
 								</div>
 								<div className="w-14 md:w-16">
-									<KeyTooltip keyLabel="M" imageUrl={"/click-cast.png"}>
+									<KeyTooltip
+										keyLabel="M"
+										imageUrl={"/click-cast.png"}
+										className="w-[350px]"
+									>
 										<Key
 											keyLabel="M"
 											description="Click Cast"
@@ -272,7 +280,11 @@ export const KeyLayouts: React.FC = () => {
 									</KeyTooltip>
 								</div>
 								<div className="w-14 md:w-16">
-									<KeyTooltip keyLabel="R" imageUrl={"/click-cast.png"}>
+									<KeyTooltip
+										keyLabel="R"
+										imageUrl={"/click-cast.png"}
+										className="w-[350px]"
+									>
 										<Key
 											keyLabel="R"
 											description="Click Cast"

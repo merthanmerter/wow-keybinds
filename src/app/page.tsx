@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { AdBanner } from "@/components/ad-banner";
-import { DonateButton } from "@/components/donate-button";
 import { KeyLayouts } from "@/components/key-layouts";
 import { KeybindsTable } from "@/components/keybinds-table";
 import { Kbd } from "@/components/ui/kbd";
@@ -9,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Home() {
 	return (
 		<div className="min-h-screen">
-			<main className="container mx-auto p-3 md:p-6 max-w-4xl">
+			<main className="container mx-auto px-3 md:px-6 py-3 max-w-4xl">
 				{/* Top Ad */}
 				{/* <AdBanner
 					dataAdSlot="6961410074"
@@ -17,7 +16,7 @@ export default function Home() {
 					dataFullWidthResponsive="true"
 				/> */}
 
-				<div className="text-center mb-8">
+				{/* <div className="text-center mb-8">
 					<h2 className="text-lg text-gray-400 text-center tracking-wide">
 						World of Warcraft
 					</h2>
@@ -27,7 +26,7 @@ export default function Home() {
 					<div className="mt-4 flex justify-center">
 						<DonateButton />
 					</div>
-				</div>
+				</div> */}
 
 				<div className="grid md:grid-cols-2 gap-6">
 					<KeyLayouts />
@@ -88,6 +87,26 @@ export default function Home() {
 					dataAdFormat="horizontal"
 					dataFullWidthResponsive="true"
 				/>
+				{/* <Link href="https://verkron.com" target="_blank">
+					<Image
+						src="/vk_banner.png"
+						alt="Verkron"
+						width={848}
+						height={90}
+						className="w-full h-[90px] mx-auto my-6 rounded-md border border-border/50 hidden sm:block"
+						priority={true}
+						unoptimized={true}
+					/>
+					<Image
+						src="/vk_banner_mobile.png"
+						alt="Verkron"
+						width={848}
+						height={90}
+						className="w-full h-[90px] mx-auto my-6 rounded-md border border-border/50 block sm:hidden"
+						priority={true}
+						unoptimized={true}
+					/>
+				</Link> */}
 
 				{/* Keybinds Table */}
 				<div className="mt-6">

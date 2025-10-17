@@ -18,7 +18,7 @@ export function DonateButton({
 		>
 			<Link href={href} target="_blank" rel="noopener noreferrer">
 				<Heart className="w-5 h-5" fill="currentColor" />
-				<span>Support This Project</span>
+				<span>Support</span>
 			</Link>
 		</Button>
 	);
