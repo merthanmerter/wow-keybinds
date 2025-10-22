@@ -44,6 +44,7 @@ const keybinds: Keybind[] = [
 	{ key: "SHIFT+C", action: "Character Pane" },
 	{ key: "Numpad -", action: "Zoom Out" },
 	{ key: "Numpad +", action: "Zoom In" },
+	{ key: "T", action: "Interact With Target" },
 ];
 
 export function KeybindsTable() {
