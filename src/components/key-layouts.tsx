@@ -36,8 +36,6 @@ export const KeyLayouts: React.FC = () => {
 								description="2nd Priority"
 								className="bg-blue-600 hover:bg-blue-500"
 								isShiftPressed={isShiftPressed}
-								hasModifier={true}
-								modifierDescription="CD / Utility"
 							/>
 						</div>
 						<div className="w-auto md:w-16">
@@ -46,8 +44,6 @@ export const KeyLayouts: React.FC = () => {
 								description="2nd Priority"
 								className="bg-blue-600 hover:bg-blue-500"
 								isShiftPressed={isShiftPressed}
-								hasModifier={true}
-								modifierDescription="CD / Utility"
 							/>
 						</div>
 						<div className="w-auto md:w-16">
@@ -154,6 +150,8 @@ export const KeyLayouts: React.FC = () => {
 								description="1st Priority"
 								className="bg-amber-600 hover:bg-amber-500"
 								isShiftPressed={isShiftPressed}
+								hasModifier={true}
+								modifierDescription="CD / Utility"
 							/>
 						</div>
 					</div>
@@ -194,6 +192,8 @@ export const KeyLayouts: React.FC = () => {
 								keyLabel="C"
 								description="CD / Utility"
 								isShiftPressed={isShiftPressed}
+								hasModifier={true}
+								modifierDescription="CD / Utility"
 							/>
 						</div>
 						<div className="w-auto md:w-16">

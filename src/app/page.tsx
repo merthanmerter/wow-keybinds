@@ -149,7 +149,7 @@ export default function Home() {
 								<span className="text-yellow-400 font-bold">
 									+5 Shift Modifiers:
 								</span>{" "}
-								Comfortable secondary layer (Shift+Q, E, Space, 1, 2) for
+								Comfortable secondary layer (Shift + Q, E, F, C, Space) for
 								situational CDs that don't need instant response.
 							</li>
 							<Separator className="my-2" />
