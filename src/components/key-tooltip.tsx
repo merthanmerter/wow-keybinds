@@ -43,7 +43,7 @@ export const KeyTooltip: React.FC<KeyTooltipProps> = ({
 			<TooltipContent
 				side="top"
 				sideOffset={12}
-				className="bg-accent border-2 border-yellow-600 rounded-lg shadow-2xl p-3"
+				className="bg-accent border-2 border-yellow-600 rounded-lg shadow-2xl p-3 z-[10000]"
 				onPointerDownOutside={() => isMobile && setOpen(false)}
 			>
 				<Image
