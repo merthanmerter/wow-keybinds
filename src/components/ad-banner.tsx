@@ -49,10 +49,7 @@ export const AdBanner = ({
 	}, []);
 
 	return (
-		<div
-			ref={containerRef}
-			className="block md:h-[90px] border border-dashed border-border/50 rounded-md p-2 w-full mx-auto my-4"
-		>
+		<div ref={containerRef} className="block w-full mx-auto my-4">
 			<ins
 				className="adsbygoogle"
 				style={{ display: "block", minWidth: "300px" }}
