@@ -8,7 +8,7 @@ export function Footer() {
 			<div className="container mx-auto px-3 md:px-6 py-3 max-w-4xl">
 				<div className="flex items-center justify-center gap-4">
 					<Link
-						href="https://buymeacoffee.com/wowkeybindings"
+						href="https://buymeacoffee.com/merthanmerter"
 						target="_blank"
 						className="text-sm text-muted-foreground hover:text-yellow-400 transition-colors"
 					>

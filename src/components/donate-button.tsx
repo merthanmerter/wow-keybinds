@@ -8,7 +8,7 @@ interface DonateButtonProps {
 }
 
 export function DonateButton({
-	href = "https://buymeacoffee.com/wowkeybindings",
+	href = "https://buymeacoffee.com/merthanmerter",
 	className = "",
 }: DonateButtonProps) {
 	return (
