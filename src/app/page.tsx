@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AdBanner } from "@/components/ad-banner";
+// import { AdBanner } from "@/components/ad-banner";
 import { KeyLayouts } from "@/components/key-layouts";
 import { KeybindsTable } from "@/components/keybinds-table";
 import { Kbd } from "@/components/ui/kbd";
@@ -82,11 +82,11 @@ export default function Home() {
 				</div>
 
 				{/* Content Ad */}
-				<AdBanner
+				{/* <AdBanner
 					dataAdSlot="8370888185"
 					dataAdFormat="horizontal"
 					dataFullWidthResponsive="true"
-				/>
+				/> */}
 				{/* <Link href="https://verkron.com" target="_blank">
 					<Image
 						src="/vk_banner.png"
@@ -241,11 +241,11 @@ export default function Home() {
 				</div>
 
 				{/* Bottom Ad */}
-				<AdBanner
+				{/* <AdBanner
 					dataAdSlot="1777559677"
 					dataAdFormat="horizontal"
 					dataFullWidthResponsive="true"
-				/>
+				/> */}
 			</main>
 		</div>
 	);

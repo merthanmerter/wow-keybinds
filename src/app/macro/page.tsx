@@ -1,4 +1,4 @@
-import { AdBanner } from "@/components/ad-banner";
+// import { AdBanner } from "@/components/ad-banner";
 
 export default function Page() {
 	return (
@@ -106,11 +106,11 @@ export default function Page() {
 					</section>
 
 					{/* Content Ad */}
-					<AdBanner
+					{/* <AdBanner
 						dataAdSlot="8370888185"
 						dataAdFormat="horizontal"
 						dataFullWidthResponsive="true"
-					/>
+					/> */}
 					{/* <Link href="https://verkron.com" target="_blank">
 						<Image
 							src="/vk_banner.png"
@@ -206,11 +206,11 @@ export default function Page() {
 				</article>
 
 				{/* Bottom Ad */}
-				<AdBanner
+				{/* <AdBanner
 					dataAdSlot="1777559677"
 					dataAdFormat="horizontal"
 					dataFullWidthResponsive="true"
-				/>
+				/> */}
 			</main>
 		</div>
 	);
